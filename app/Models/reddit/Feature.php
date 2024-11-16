@@ -18,4 +18,9 @@ class Feature extends Model
         'allow_polls',
         'submission_type'
     ];
+
+    public function reddits()
+    {
+        return $this->hasOne(Reddits::class, 'id_description');
+    }
 }

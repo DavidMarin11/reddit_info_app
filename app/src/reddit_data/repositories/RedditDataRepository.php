@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\reddit\repositories;
+namespace App\src\reddit_data\repositories;
 
 use App\Models\reddit\Appearance;
 use App\Models\reddit\Description;

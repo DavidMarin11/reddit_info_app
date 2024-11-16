@@ -1,6 +1,6 @@
 <?php
 
-namespace App\src\reddit\DTOS;
+namespace App\src\reddit_data\DTOS;
 
 class FeatureDto {
 

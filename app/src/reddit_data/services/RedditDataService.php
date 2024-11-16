@@ -1,12 +1,12 @@
 <?php
 
-namespace App\src\reddit\services;
+namespace App\src\reddit_data\services;
 
-use App\src\reddit\DTOS\AppearanceDto;
-use App\src\reddit\DTOS\DescriptionDto;
-use App\src\reddit\DTOS\FeatureDto;
-use App\src\reddit\DTOS\RedditsDto;
-use App\src\reddit\repositories\RedditDataRepository;
+use App\src\reddit_data\DTOS\AppearanceDto;
+use App\src\reddit_data\DTOS\DescriptionDto;
+use App\src\reddit_data\DTOS\FeatureDto;
+use App\src\reddit_data\DTOS\RedditsDto;
+use App\src\reddit_data\repositories\RedditDataRepository;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;

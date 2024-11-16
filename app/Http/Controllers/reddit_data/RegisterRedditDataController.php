@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\reddit;
+namespace App\Http\Controllers\reddit_data;
 
 use App\Http\Controllers\Controller;
-use App\src\reddit\services\RedditDataService;
+use App\src\reddit_data\services\RedditDataService;
 
 class RegisterRedditDataController extends Controller
 {

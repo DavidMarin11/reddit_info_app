@@ -18,4 +18,9 @@ class Description extends Model
         'submit_text_html',
         'public_description'
     ];
+
+    public function reddits()
+    {
+        return $this->hasOne(Reddits::class, 'id_description');
+    }
 }

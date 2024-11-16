@@ -21,4 +21,19 @@ class Reddits extends Model
         'id_feature',
         'id_description'
     ];
+
+    public function appearance()
+    {
+        return $this->belongsTo(Appearance::class, 'id_appearance');
+    }
+
+    public function feature()
+    {
+        return $this->belongsTo(Feature::class, 'id_feature');
+    }
+
+    public function description()
+    {
+        return $this->belongsTo(Description::class, 'id_description');
+    }
 }

@@ -16,4 +16,9 @@ class Appearance extends Model
         'primary_color',
         'key_color'
     ];
+
+    public function reddits()
+    {
+        return $this->hasOne(Reddits::class, 'id_appearance');
+    }
 }
