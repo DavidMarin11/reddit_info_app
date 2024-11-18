@@ -6,6 +6,7 @@ use App\src\reddit\repositories\RedditRepository;
 use Exception;
 
 class RedditService {
+    
     public $redditRepository;
 
     public function __construct(RedditRepository $redditRepository) {
@@ -17,7 +18,6 @@ class RedditService {
         try {
 
             $reddits = $this->redditRepository->getAllReddits();
-
             return response()->json(['reddits' => $reddits], 200);
 
         } catch(Exception $e) {
@@ -35,7 +35,7 @@ class RedditService {
                 return response()->json(['message' => 'El Reddit no fue encontrado.'], 404);
             }
 
-            return response()->json(['reddits' => $reddit], 200);
+            return response()->json(['reddit' => $reddit], 200);
 
         } catch(Exception $e) {
             return response()->json(['error' => 'Ha ocurrido un error al obtener el Reddit.'], 404);

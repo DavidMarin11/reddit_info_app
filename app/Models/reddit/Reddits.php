@@ -2,6 +2,7 @@
 
 namespace App\Models\reddit;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -35,5 +36,10 @@ class Reddits extends Model
     public function description()
     {
         return $this->belongsTo(Description::class, 'id_description');
+    }
+
+    public function getCreatedAttribute($value)
+    {
+        return Carbon::createFromTimestamp($value)->format('d-m-Y');
     }
 }

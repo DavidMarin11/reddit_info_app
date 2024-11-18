@@ -14,7 +14,7 @@ class RegisterRedditDataController extends Controller
     }
 
     public function registerRedditData()
-    {
+    {  
         return $this->redditDataService->registerRedditData();
     }
     
